@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>duaye</h1>
+    <button onclick="showdua()">Show Dua</button>
+    <div id="output"></div>
+</body>
+<script>
+    const dua=[
+
+    {
+        title:"Dua for sleeping",
+        dua:"اللَّهُمَّ بِاسْمِكَ أَمُوتُ وَأَحْيَا"
+    },
+
+     {
+    title :"Dua for eating ",
+    dua:"بِسْمِ اللَّهِ وَعَلَى بَرَكَةِ اللَّهِ"
+    }
+    ]
+
+    function showdua(){
+      let randomIndex = Math.floor(Math.random() * dua.length);
+      document.getElementById("output").innerHTML = `<h2>${dua[randomIndex].title}</h2><p>${dua[randomIndex].dua}</p>`;
+}
+
+
+
+
+
+
+
+</script>
+</html>
